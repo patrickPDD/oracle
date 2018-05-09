@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background: linear-gradient(red, yellow);
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather by City </title>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <!-- <base href="/"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <form action="/" method="post">
+                <input name="city" type="text" class="ghost-input" placeholder="What City can we look up?" required>
+                <input type="submit" class="ghost-button" value="Get Weather">
+            </form>
+
+            <p>
+                <%= temp0 %>
+                    <%= city %>
+                        <%= state %>
+                            <%= description0 %>
+                                <%= humidity0 %> Humidity
+                                    <img src="<%= icon0 %>" alt="weather icon">
+
+            </p>
+
+
+
+        </fieldset>
+    </div>
+</body>
+
+</html>
