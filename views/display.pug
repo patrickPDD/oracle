@@ -8,33 +8,37 @@ html(lang="en")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.12/css/all.css", integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9", crossorigin="anonymous")
 
     body
+        img(src="../assets/cloud1.png", alt="", id="cloud1")
+        img(src="../assets/cloud2.png", alt="", id="cloud2")
         .container
-            div(class="current-conditions")
+            div(class="header")
                 i(class="fas fa-search")
                 p #{city}
                 i(class="fas fa-times")
+              
+            div(class="cc-details")
                 h1 #{ temp0 }
-                div(class="cc-details")
+                div(class="fine-details")
                     p #{ description0 }
                     p #{ humidity0 }% Humidity
             div(class="five-days")
-                div(class="day0")
+                div(id="day0")
                     p #{date0} #{day0}
                     img(src=icon0)
                     p #{temp0}
-                div(class="day1")
+                div(id="day1")
                     p #{date1} #{day1}
                     img(src=icon1)
                     p #{temp1}
-                div(class="day2")
+                div(id="day2")
                     p #{date2} #{day2}
                     img(src=icon2)
                     p #{temp2}
-                div(class="day3")
+                div(id="day3")
                     p #{date3} #{day3}
                     img(src=icon3)
                     p #{temp3}
-                div(class="day4")
+                div(id="day4")
                     p #{date4} #{day4}
                     img(src=icon4)
                     p #{temp4}

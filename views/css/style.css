@@ -1,4 +1,6 @@
 html {
+  margin: 0;
+  padding: 0;
   height: 100%;
   height: 100%;
   background: linear-gradient(rgb(54, 124, 214), rgb(74, 144, 226));
@@ -8,22 +10,116 @@ html {
 body {
   display: grid;
 }
+
+body > img#cloud1 {
+  margin: 20vh 20vw;
+}
+
+body > img#cloud2 {
+  margin: -10vh 10vw;
+}
 .container {
   justify-self: center;
-  height: 60vh;
-  width: 40vw;
+  width: 50vw;
   background-color: rgba(32, 61, 226, 0.2);
   border-radius: 1vw;
+  margin-top: 20vh;
+}
+
+.header {
+  display: inline-flex;
+}
+
+.header > p {
+  color: white;
 }
 
 h1 {
+  font-size: 20vh;
+  font-weight: 300;
   color: white;
+  margin: 0 0 0 11vw;
 }
 
 h1:after {
+  font-size: 7vh;
   content: "\00b0 F";
+  vertical-align: super;
 }
 
-p {
-  color: white;
+.cc-details {
+  width: 100%;
+}
+
+.fine-details {
+  position: relative;
+  top: -13vh;
+  left: 30vw;
+  line-height: 1vh;
+}
+
+.fine-details > p {
+  color: #fff;
+}
+
+.five-days {
+  background-color: #fff;
+  display: grid;
+  height: 20vh;
+  width: 50vw;
+}
+.five-days > p {
+  color: black;
+  justify-self: center;
+  font-size: 0.5em;
+}
+
+#day0 {
+  grid-column: 1;
+  grid-row: 1;
+
+  /* NEW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#day1 {
+  grid-column: 2;
+  grid-row: 1;
+
+  /* NEW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#day2 {
+  grid-column: 3;
+  grid-row: 1;
+
+  /* NEW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#day3 {
+  grid-column: 4;
+  grid-row: 1;
+
+  /* NEW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#day4 {
+  grid-column: 5;
+  grid-row: 1;
+
+  /* NEW */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

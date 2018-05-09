@@ -25,11 +25,11 @@ app.post("/", function(req, res) {
     } else {
       let weather = JSON.parse(body);
 
-      if (weather.message == undefined) {
+      if (weather.cod != 200) {
         console.log("weather message undefined");
         res.render("index", {
           weather: null,
-          error: "Error, please try again "
+          error: `Error, please try again we can't find ${city}`
         });
       } else {
         let epochTime0 = new Date(weather.list[5].dt * 1000);
